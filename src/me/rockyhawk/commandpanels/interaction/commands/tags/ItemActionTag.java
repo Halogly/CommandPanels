@@ -31,8 +31,8 @@ public class ItemActionTag implements CommandTagResolver {
                 return;
             }
 
-            int slot = Integer.parseInt(args[1]);
             String action = args[0].toLowerCase();
+            int slot = Integer.parseInt(args[1]);
 
             Inventory gui = player.getOpenInventory().getTopInventory();
             ItemStack item = gui.getItem(slot);
